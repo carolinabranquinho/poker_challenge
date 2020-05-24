@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Poker Simulator</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./utils/css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="refresh">
+                <button value="Refresh Page" onclick="window.location.reload()">Refresh</button>
+            </div>
+
+            <div class="players row">
+                <div id="player1">
+                    <h2>Player 1</h2>
+                    <button>Random hand</button>
+                    <ul id="cardListOne"></ul>
+                </div>
+                <div id="player2">
+                    <h2>Player 2</h2>
+                    <button>Random hand</button>
+                    <ul id="cardListTwo"></ul>
+                    
+                </div>
+            </div>
+
+            <div class="compare">
+                <button id="btnCompare">Compare</button>
+            </div>
+            <div id="result">
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./utils/js/random_hand.js"></script>
+        <script type="text/javascript" src="./utils/js/draw_game.js"></script>
+        <script type="text/javascript" src="./utils/js/hand_type.js"></script>
+        <script type="text/javascript" src="./utils/js/better_hand.js"></script>
+        <script type="text/javascript" src="./utils/js/index.js"></script>
+    </body>
+</html>
